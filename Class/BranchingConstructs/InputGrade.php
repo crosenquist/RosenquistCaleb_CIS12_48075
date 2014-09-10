@@ -15,8 +15,9 @@
 
 <body>
 <?php
-	//Initialize the input
-	$score = rand(0,100);
+	//Utilize the built in capabilities of PHP to intercept
+	//information passed from a form
+	$score = (int)$_GET['Score'];
 	
 	//Determine the grade
 	$grade = $score >= 90?'A':(

@@ -17,14 +17,17 @@
 <?php
 	//Initialize the input and declare variables
 	$score = rand(0,100);
-	$score = '';
+	$grade = '';
 	
 	//Determine the grade
-	if($score>=90) $grade = 'A';
-	if($score>=80&&$score<90) $grade = 'B';
-	if($score>=70&&$score<80) $grade = 'C';
-	if($score>=60&&$score<70) $grade = 'D';
-	if($score<60) $grade = 'F';
+	//Nested Switch Statements
+	switch(true){
+		case $score>=90: $grade = 'A'; break;
+		case $score>=80: $grade = 'B'; break;
+		case $score>=70: $grade = 'C'; break;
+		case $score>=60: $grade = 'D'; break;
+		default:         $grade = 'F';
+	}
 	
 	//Output the results
 	echo "<h1>A score of $score = $grade</h1>";
