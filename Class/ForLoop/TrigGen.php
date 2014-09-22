@@ -6,11 +6,11 @@
 </head>
 
 <body>
-<form action="Trig.php" method="get">
-	<input name="angStrt" typ="text" /> Angle Start (Deg)<br>;
-    <input name="angEnd" typ="text" /> Angle End (Deg);
-    <input name="angInc" typ="text" /> Angle Increment (Deg);
-    <input type="Submit" /> Calculate and Display;
+<form action="./Trig.php" method="get">
+	<input name="angStrt" type="text" /> Angle Start (Deg)</br>
+    <input name="angEnd" type="text" /> Angle End (Deg)</br>
+    <input name="angInc" type="text" /> Angle Increment (Deg)</br>
+    <input name="Calculate and Display" type="Submit"/>
 </form>
 </body>
 </html>

@@ -52,6 +52,8 @@
 	//echo "<tr>";
 	for($angle=$angStrt;$angle<=$angEnd;$angle+=$angInc){
 		echo "<tr> ";
+		for($cols=1;$cols<=5;$cols++){
+			
 		echo "<td>".$degree[$angle]."</td>";
 		echo "<td>".$radian[$angle]."</td>";
 		echo "<td>".$sine[$angle]."</td>";
